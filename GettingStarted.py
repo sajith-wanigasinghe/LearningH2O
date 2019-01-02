@@ -14,7 +14,7 @@ data = h2o.import_file(file_path)
 # encode the binary repsonse as a factor
 data['bad_loan'] = data['bad_loan'].asfactor()  
 
-# fter encoding, this shows the two factor levels, '0' and '1'
+# after encoding, this shows the two factor levels, '0' and '1'
 data['bad_loan'].levels()  
 
 # Partition data into 70%, 15%, 15% chunks
